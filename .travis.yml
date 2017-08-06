@@ -23,7 +23,7 @@ install:
       cd ..;
     fi
   - npm install -g elm
-  - $TRAVIS_BUILD_DIR/sysconfcpus/bin/sysconfcpus -n 2 elm-package install -y
+  - elm-package install -y
 
 script:
   - sh ./util/publish.sh
