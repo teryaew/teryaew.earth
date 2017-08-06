@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
-    "summary": "teryaew.earth source code",
-    "repository": "https://github.com/teryaew/teryaew.earth",
+    "summary": "Source code of teryaew.earth",
+    "repository": "https://github.com/user/project.git",
     "license": "BSD3",
     "source-directories": [
         "nesting"

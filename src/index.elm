@@ -19,8 +19,7 @@ stylePage =
 styleHeading : Attribute msg
 styleHeading =
   style
-    [ ("font-size", "30px")
-    ]
+    [ ("font-size", "30px") ]
 
 styleSubHeading : Attribute msg
 styleSubHeading =

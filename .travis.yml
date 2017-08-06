@@ -1,0 +1,16 @@
+dist: trusty
+
+language: node_js
+
+node_js:
+  - '7.4.0'
+
+matrix:
+  fast_finish: true
+
+install:
+  - npm install -g elm@~0.17.0 casperjs http-server
+  - elm-package install -y
+
+script:
+  - sh ./util/publish.sh
