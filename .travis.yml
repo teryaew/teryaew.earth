@@ -13,7 +13,7 @@ cache:
     - sysconfcpus
 
 install:
-   - |
+  - |
     if [ ! -d sysconfcpus/bin ];
     then
       git clone https://github.com/obmarg/libsysconfcpus.git;
