@@ -8,7 +8,7 @@ git config user.email "travis@travis-ci.org"
 git remote add upstream "https://$GH_TOKEN@github.com/teryaew/teryaew.earth.git"
 git fetch -q upstream && git reset -q upstream/gh-pages
 
-git add .
+git add ./index.html
 git commit -q -m "chore(*): update site by travis build $TRAVIS_BUILD_NUMBER"
 git push -q upstream HEAD:gh-pages
 
