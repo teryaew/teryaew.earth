@@ -2,8 +2,6 @@
 
 echo "Publishing site..."
 
-ROOT="$(dirname $(dirname $0))"
-
 git config user.name "Travis CI"
 git config user.email "travis@travis-ci.org"
 
