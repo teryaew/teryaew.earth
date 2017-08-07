@@ -1,6 +1,11 @@
 import Html exposing (..)
 import Html.Attributes exposing (..)
 
+type alias LinkEntry =
+  { url : String
+  , title : String
+  }
+
 stylePage : Attribute msg
 stylePage =
   style
@@ -13,7 +18,6 @@ stylePage =
     , ("color", "rgba(0, 0, 0, .8)")
     , ("font-family", "BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Roboto Rouble', sans-serif")
     , ("font-size", "16px")
-    , ("border", "50px solid azure")
     ]
 
 styleHeading : Attribute msg
@@ -34,21 +38,16 @@ styleSocialLink : Attribute msg
 styleSocialLink =
   style
     [ ("color", "rgba(0, 0, 0, .8)")
-    , ("margin-left", "5px")
+    , ("margin-left", "10px")
     ]
 
 socialLinks : List LinkEntry
 socialLinks =
   [ { url = "https://www.facebook.com/teryaew", title = "fb" }
-  , { url = "https://www.facebook.com/teryaew", title = "gh" }
+  , { url = "https://www.github.com/teryaew", title = "gh" }
   , { url = "https://twitter.com/teryaew", title = "tw" }
   , { url = "https://vk.com/mitya.teryaew", title = "vk" }
   ]
-
-type alias LinkEntry =
-  { url : String
-  , title : String
-  }
 
 main : Html msg
 main =
