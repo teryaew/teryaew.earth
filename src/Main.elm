@@ -15,7 +15,10 @@ stylesheet =
     children =
       [ text """
           html, body { height: 100%; }
-          @media screen and (max-width: 768px) { body { background: #eee; } }
+          @media screen and (max-width: 768px) {
+            body { background: #eee; }
+            h1 { line-height: .8 !important; }
+          }
         """
       ]
   in
