@@ -16,8 +16,9 @@ stylesheet =
       [ text """
           html, body { height: 100%; }
           @media screen and (max-width: 768px) {
-            body { background: #eee; }
-            h1 { line-height: .8 !important; }
+            body { -webkit-text-size-adjust: 100%; background: #eee; }
+            h1 { margin-top: 0; line-height: .8 !important; }
+            section a { font-size: 13px !important; }
           }
         """
       ]
