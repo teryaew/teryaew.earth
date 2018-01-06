@@ -17,3 +17,14 @@ Production mode:
 ```
 elm make ./src/Main.elm
 ```
+
+NB:
+
+Don't change `repository` field in `elm-package.json` https://github.com/user/project.git, because Elm incorrectly treat urls with `.` in basename: https://github.com/teryaew/teryaew.earth.git:
+
+```
+Uncaught SyntaxError: Unexpected token .
+teryaew.earth/:8478 Uncaught ReferenceError: Elm is not defined
+```
+
+https://github.com/elm-lang/elm-make/issues/106#issuecomment-314190437
