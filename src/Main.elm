@@ -40,6 +40,13 @@ main =
         [ name "viewport"
         , content "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         ] []
+    , node "script" [async True, src "https://www.googletagmanager.com/gtag/js?id=UA-112022455-1"] []
+    , node "script" [] [text """
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-112022455-1');
+      """]
     , stylesheet
     , h1 [Styles.heading]
       [ span [Styles.headingName] [text "Mitya"]
