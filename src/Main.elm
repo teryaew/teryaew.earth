@@ -13,7 +13,11 @@ stylesheet =
     tag = "style"
     attrs = []
     children =
-      [ text "html, body { height: 100%; }" ]
+      [ text """
+          html, body { height: 100%; }
+          @media screen and (max-width: 768px) { body { background: #eee; } }
+        """
+      ]
   in
     node tag attrs children
 
@@ -28,7 +32,11 @@ socialLinks =
 main : Html msg
 main =
   div [Styles.page]
-    [ stylesheet
+    [ node "meta"
+        [ name "viewport"
+        , content "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        ] []
+    , stylesheet
     , h1 [Styles.heading]
       [ span [Styles.headingName] [text "Mitya"]
       , span [Styles.headingSurname] [text "Teryaew"]
