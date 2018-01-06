@@ -33,7 +33,7 @@ main =
       [ span [Styles.headingName] [text "Mitya"]
       , span [Styles.headingSurname] [text "Teryaew"]
       ]
-    , a [href "#", Styles.cv] [text "CV"]
+    , a [href "pdf/teryaew__cv_2017.pdf", Styles.cv] [text "CV"]
     , section [Styles.socials]
       [ span [] (List.map renderLink socialLinks) ]
     ]
