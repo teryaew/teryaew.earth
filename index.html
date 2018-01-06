@@ -8117,7 +8117,7 @@ var _elm_lang$html$Html_Attributes$classList = function (list) {
 				A2(_elm_lang$core$List$filter, _elm_lang$core$Tuple$second, list))));
 };
 var _elm_lang$html$Html_Attributes$style = _elm_lang$virtual_dom$VirtualDom$style;
-var _user$project$Styles$cv = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$cv = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
@@ -8143,7 +8143,7 @@ var _user$project$Styles$cv = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Styles$socialLink = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$socialLink = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'margin-left', _1: '20px'},
@@ -8161,7 +8161,7 @@ var _user$project$Styles$socialLink = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Styles$socials = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$socials = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
@@ -8179,7 +8179,7 @@ var _user$project$Styles$socials = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Styles$headingSurname = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$headingSurname = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
@@ -8193,7 +8193,7 @@ var _user$project$Styles$headingSurname = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Styles$headingName = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$headingName = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
@@ -8207,7 +8207,7 @@ var _user$project$Styles$headingName = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Styles$heading = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$heading = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
@@ -8233,7 +8233,7 @@ var _user$project$Styles$heading = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Styles$page = _elm_lang$html$Html_Attributes$style(
+var _teryaew$teryaew.earth$Styles$page = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
 		_0: {ctor: '_Tuple2', _0: 'box-sizing', _1: 'border-box'},
@@ -8275,7 +8275,7 @@ var _user$project$Styles$page = _elm_lang$html$Html_Attributes$style(
 			}
 		}
 	});
-var _user$project$Main$renderLink = function (_p0) {
+var _teryaew$teryaew.earth$Main$renderLink = function (_p0) {
 	var _p1 = _p0;
 	return A2(
 		_elm_lang$html$Html$a,
@@ -8290,7 +8290,7 @@ var _user$project$Main$renderLink = function (_p0) {
 					_0: _elm_lang$html$Html_Attributes$target('_blank'),
 					_1: {
 						ctor: '::',
-						_0: _user$project$Styles$socialLink,
+						_0: _teryaew$teryaew.earth$Styles$socialLink,
 						_1: {ctor: '[]'}
 					}
 				}
@@ -8302,7 +8302,7 @@ var _user$project$Main$renderLink = function (_p0) {
 			_1: {ctor: '[]'}
 		});
 };
-var _user$project$Main$socialLinks = {
+var _teryaew$teryaew.earth$Main$socialLinks = {
 	ctor: '::',
 	_0: {url: 'https://www.facebook.com/teryaew', title: 'Facebook'},
 	_1: {
@@ -8319,22 +8319,22 @@ var _user$project$Main$socialLinks = {
 		}
 	}
 };
-var _user$project$Main$stylesheet = function () {
+var _teryaew$teryaew.earth$Main$stylesheet = function () {
 	var children = {
 		ctor: '::',
-		_0: _elm_lang$html$Html$text('\n          html, body { height: 100%; }\n          @media screen and (max-width: 768px) {\n            body { background: #eee; }\n            h1 { line-height: .8 !important; }\n          }\n        '),
+		_0: _elm_lang$html$Html$text('\n          html, body { height: 100%; }\n          @media screen and (max-width: 768px) {\n            body { -webkit-text-size-adjust: 100%; background: #eee; }\n            h1 { margin-top: 0; line-height: .8 !important; }\n            section a { font-size: 13px !important; }\n          }\n        '),
 		_1: {ctor: '[]'}
 	};
 	var attrs = {ctor: '[]'};
 	var tag = 'style';
 	return A3(_elm_lang$html$Html$node, tag, attrs, children);
 }();
-var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+var _teryaew$teryaew.earth$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
 	A2(
 		_elm_lang$html$Html$div,
 		{
 			ctor: '::',
-			_0: _user$project$Styles$page,
+			_0: _teryaew$teryaew.earth$Styles$page,
 			_1: {ctor: '[]'}
 		},
 		{
@@ -8354,14 +8354,14 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 				{ctor: '[]'}),
 			_1: {
 				ctor: '::',
-				_0: _user$project$Main$stylesheet,
+				_0: _teryaew$teryaew.earth$Main$stylesheet,
 				_1: {
 					ctor: '::',
 					_0: A2(
 						_elm_lang$html$Html$h1,
 						{
 							ctor: '::',
-							_0: _user$project$Styles$heading,
+							_0: _teryaew$teryaew.earth$Styles$heading,
 							_1: {ctor: '[]'}
 						},
 						{
@@ -8370,7 +8370,7 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 								_elm_lang$html$Html$span,
 								{
 									ctor: '::',
-									_0: _user$project$Styles$headingName,
+									_0: _teryaew$teryaew.earth$Styles$headingName,
 									_1: {ctor: '[]'}
 								},
 								{
@@ -8384,7 +8384,7 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 									_elm_lang$html$Html$span,
 									{
 										ctor: '::',
-										_0: _user$project$Styles$headingSurname,
+										_0: _teryaew$teryaew.earth$Styles$headingSurname,
 										_1: {ctor: '[]'}
 									},
 									{
@@ -8404,7 +8404,7 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 								_0: _elm_lang$html$Html_Attributes$href('pdf/teryaew__cv_2017.pdf'),
 								_1: {
 									ctor: '::',
-									_0: _user$project$Styles$cv,
+									_0: _teryaew$teryaew.earth$Styles$cv,
 									_1: {ctor: '[]'}
 								}
 							},
@@ -8419,7 +8419,7 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 								_elm_lang$html$Html$section,
 								{
 									ctor: '::',
-									_0: _user$project$Styles$socials,
+									_0: _teryaew$teryaew.earth$Styles$socials,
 									_1: {ctor: '[]'}
 								},
 								{
@@ -8427,7 +8427,7 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 									_0: A2(
 										_elm_lang$html$Html$span,
 										{ctor: '[]'},
-										A2(_elm_lang$core$List$map, _user$project$Main$renderLink, _user$project$Main$socialLinks)),
+										A2(_elm_lang$core$List$map, _teryaew$teryaew.earth$Main$renderLink, _teryaew$teryaew.earth$Main$socialLinks)),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -8436,14 +8436,14 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 				}
 			}
 		}));
-var _user$project$Main$LinkEntry = F2(
+var _teryaew$teryaew.earth$Main$LinkEntry = F2(
 	function (a, b) {
 		return {url: a, title: b};
 	});
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
-if (typeof _user$project$Main$main !== 'undefined') {
-    _user$project$Main$main(Elm['Main'], 'Main', undefined);
+if (typeof _teryaew$teryaew.earth$Main$main !== 'undefined') {
+    _teryaew$teryaew.earth$Main$main(Elm['Main'], 'Main', undefined);
 }
 
 if (typeof define === "function" && define['amd'])
