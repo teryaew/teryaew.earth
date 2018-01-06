@@ -13,7 +13,7 @@ stylesheet =
     tag = "style"
     attrs = []
     children =
-      [ text "body { height: 100%; }" ]
+      [ text "html, body { height: 100%; }" ]
   in
     node tag attrs children
 
