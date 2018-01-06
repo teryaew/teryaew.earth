@@ -5,6 +5,15 @@
 
 Source code of http://teryaew.earth
 
+
+Dev mode:
+
 ```
-elm make ./src/index.elm
+elm-reactor
+```
+
+Production mode:
+
+```
+elm make ./src/Main.elm
 ```
