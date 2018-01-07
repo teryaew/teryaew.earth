@@ -42,7 +42,7 @@ headingSurname =
   style
     [ ("position", "relative")
     , ("color", "rgba(255, 255, 255, .86)")
-    , ("text-shadow", "0 0 100em rgba(10, 20, 20, .9)")
+    , ("text-shadow", "0 0 1000px rgba(10, 20, 20, .9)")
     ]
 
 socials : Attribute msg
