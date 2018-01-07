@@ -34,7 +34,7 @@ headingName =
   style
     [ ("position", "relative")
     , ("color", "rgba(255, 255, 255, 1)")
-    , ("text-shadow", "0 0 100em rgba(10, 20, 20, .8)")
+    , ("text-shadow", "0 0 1000px rgba(10, 20, 20, .8)")
     ]
 
 headingSurname : Attribute msg
