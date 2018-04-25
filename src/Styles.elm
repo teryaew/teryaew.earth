@@ -62,14 +62,3 @@ socialLink =
     , ("font-family", "monospace")
     , ("font-size", "16px")
     ]
-
-cv : Attribute msg
-cv =
-  style
-    [ ("position", "absolute")
-    , ("top", "20px")
-    , ("right", "22px")
-    , ("color", "rgba(10, 20, 20, .8)")
-    , ("font-family", "monospace")
-    , ("font-size", "18px")
-    ]

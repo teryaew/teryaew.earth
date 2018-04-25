@@ -52,7 +52,6 @@ main =
       [ span [Styles.headingName] [text "Mitya"]
       , span [Styles.headingSurname] [text "Teryaew"]
       ]
-    , a [href "pdf/teryaew__cv_2018.pdf", Styles.cv] [text "CV"]
     , section [Styles.socials]
       [ span [] (List.map renderLink socialLinks) ]
     ]
