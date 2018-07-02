@@ -11,7 +11,8 @@ git fetch -q upstream && git reset -q upstream/gh-pages
 $TRAVIS_BUILD_DIR/sysconfcpus/bin/sysconfcpus -n 2 elm make ./src/Main.elm
 
 git add -f ./index.html
-git checkout master -- ./pdf/teryaew__cv_2018.pdf
+git checkout master -- ./pdf/teryaew__cv_2018_en.pdf
+git checkout master -- ./pdf/teryaew__cv_2018_ru.pdf
 
 git commit -q -m "chore(*): update site by travis build $TRAVIS_BUILD_NUMBER"
 git push -q upstream HEAD:gh-pages
