@@ -8117,6 +8117,78 @@ var _elm_lang$html$Html_Attributes$classList = function (list) {
 				A2(_elm_lang$core$List$filter, _elm_lang$core$Tuple$second, list))));
 };
 var _elm_lang$html$Html_Attributes$style = _elm_lang$virtual_dom$VirtualDom$style;
+var _user$project$Styles$cvLang = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'margin-left', _1: '6px'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'color', _1: 'rgba(10, 20, 20, .8)'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'Georgia, Times, \'Times New Roman\', serif'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'font-size', _1: '13px'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'font-style', _1: 'italic'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Styles$cvLink = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'margin-right', _1: '0px'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'color', _1: 'rgba(10, 20, 20, .8)'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'monospace'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'font-size', _1: '16px'},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Styles$cvItem = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'line-height', _1: '1.4'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'right'},
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Styles$cv = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'top', _1: '20px'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'right', _1: '22px'},
+				_1: {ctor: '[]'}
+			}
+		}
+	});
 var _user$project$Styles$socialLink = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
@@ -8187,20 +8259,24 @@ var _user$project$Styles$heading = _elm_lang$html$Html_Attributes$style(
 		_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 		_1: {
 			ctor: '::',
-			_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
+			_0: {ctor: '_Tuple2', _0: 'margin', _1: '-8vh 0 0'},
 			_1: {
 				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
+				_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
 				_1: {
 					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'font-size', _1: '20vw'},
+					_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
 					_1: {
 						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '900'},
+						_0: {ctor: '_Tuple2', _0: 'font-size', _1: '20vw'},
 						_1: {
 							ctor: '::',
-							_0: {ctor: '_Tuple2', _0: 'line-height', _1: '.397'},
-							_1: {ctor: '[]'}
+							_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '900'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'line-height', _1: '.397'},
+								_1: {ctor: '[]'}
+							}
 						}
 					}
 				}
@@ -8398,21 +8474,122 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 							_1: {
 								ctor: '::',
 								_0: A2(
-									_elm_lang$html$Html$section,
+									_elm_lang$html$Html$div,
 									{
 										ctor: '::',
-										_0: _user$project$Styles$socials,
+										_0: _user$project$Styles$cv,
 										_1: {ctor: '[]'}
 									},
 									{
 										ctor: '::',
 										_0: A2(
-											_elm_lang$html$Html$span,
-											{ctor: '[]'},
-											A2(_elm_lang$core$List$map, _user$project$Main$renderLink, _user$project$Main$socialLinks)),
-										_1: {ctor: '[]'}
+											_elm_lang$html$Html$div,
+											{
+												ctor: '::',
+												_0: _user$project$Styles$cvItem,
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$a,
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html_Attributes$href('pdf/teryaew__cv_2018_en.pdf'),
+														_1: {
+															ctor: '::',
+															_0: _user$project$Styles$cvLink,
+															_1: {ctor: '[]'}
+														}
+													},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('CV'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$span,
+														{
+															ctor: '::',
+															_0: _user$project$Styles$cvLang,
+															_1: {ctor: '[]'}
+														},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('(in english)'),
+															_1: {ctor: '[]'}
+														}),
+													_1: {ctor: '[]'}
+												}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$div,
+												{
+													ctor: '::',
+													_0: _user$project$Styles$cvItem,
+													_1: {ctor: '[]'}
+												},
+												{
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$a,
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html_Attributes$href('pdf/teryaew__cv_2018_ru.pdf'),
+															_1: {
+																ctor: '::',
+																_0: _user$project$Styles$cvLink,
+																_1: {ctor: '[]'}
+															}
+														},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('CV'),
+															_1: {ctor: '[]'}
+														}),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_elm_lang$html$Html$span,
+															{
+																ctor: '::',
+																_0: _user$project$Styles$cvLang,
+																_1: {ctor: '[]'}
+															},
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html$text('(на русском)'),
+																_1: {ctor: '[]'}
+															}),
+														_1: {ctor: '[]'}
+													}
+												}),
+											_1: {ctor: '[]'}
+										}
 									}),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$section,
+										{
+											ctor: '::',
+											_0: _user$project$Styles$socials,
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$span,
+												{ctor: '[]'},
+												A2(_elm_lang$core$List$map, _user$project$Main$renderLink, _user$project$Main$socialLinks)),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
 							}
 						}
 					}
