@@ -22,6 +22,7 @@ heading : Attribute msg
 heading =
   style
     [ ("display", "flex")
+    , ("margin", "-8vh 0 0")
     , ("flex-direction", "column")
     , ("justify-content", "center")
     , ("font-size", "20vw")
@@ -61,4 +62,40 @@ socialLink =
     , ("color", "rgba(10, 20, 20, .8)")
     , ("font-family", "monospace")
     , ("font-size", "16px")
+    ]
+
+cv : Attribute msg
+cv =
+  style
+    [ ("position", "absolute")
+    , ("top", "20px")
+    , ("right", "22px")
+    ]
+
+cvItem : Attribute msg
+cvItem =
+  style
+    [ ("line-height", "1.4")
+    , ("text-align", "right")
+    ]
+
+cvLink : Attribute msg
+cvLink =
+  style
+    [ ("display", "inline-block")
+    , ("margin-right", "0px")
+    , ("color", "rgba(10, 20, 20, .8)")
+    , ("font-family", "monospace")
+    , ("font-size", "16px")
+    ]
+
+cvLang : Attribute msg
+cvLang =
+  style
+    [ ("display", "inline-block")
+    , ("margin-left", "6px")
+    , ("color", "rgba(10, 20, 20, .8)")
+    , ("font-family", "Georgia, Times, 'Times New Roman', serif")
+    , ("font-size", "13px")
+    , ("font-style", "italic")
     ]
